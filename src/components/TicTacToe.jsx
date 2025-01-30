@@ -138,7 +138,6 @@ const TicTacToe = () => {
           <p>Next Player: {isXNext ? "X" : "O"}</p>
           <button onClick={resetGame}>Reset</button>
 
-          {/* Winner Dialog */}
           {winner && (
             <div className="winner-dialog">
               <h2>{winner === "Draw" ? "It's a Draw!" : `Winner: ${winner}`}</h2>
@@ -146,7 +145,6 @@ const TicTacToe = () => {
             </div>
           )}
 
-          {/* Move History */}
           <div className="history">
             <h3>Move History:</h3>
             <ul>
